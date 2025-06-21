@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefbff;
+    background-image: url('imagenes/fondosection.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    color: #2c2c2c;
+}
+
+h1 {
+    text-align: center;
+    color: #2e2e2e;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.producto {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #e0d8f5;
+    border-radius: 12px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+.producto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(216, 202, 255, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.producto img:hover {
+    transform: scale(1.02);
+}
+
+.producto h2 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #2e2e2e;
+}
+
+.producto p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+    color: #333;
+}

@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefbff; /* Fondo muy claro, casi blanco */
+    background-image: url('imagenes/fondosection.jpg'); /* solo si usas una imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    color: #2c2c2c;
+}
+
+h1 {
+    text-align: center;
+    color: #2e2e2e;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco con un poco de transparencia */
+    border: 1px solid #e0d8f5; /* Lila muy claro */
+    border-radius: 12px;
+    margin: 15px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(2px); /* para más armonía con fondo detallado */
+}
+
+.producto img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(216, 202, 255, 0.6); /* sombra lila suave */
+    transition: transform 0.3s ease;
+}
+
+.producto img:hover {
+    transform: scale(1.02);
+}

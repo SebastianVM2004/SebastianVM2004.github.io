@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(imagenes/fondosection.jpg);
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    background-color: #2a1f28; /* Lila oscuro inspirado en .promocion */
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ff66ab; /* Rosa neón */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #d8caff; /* Lila claro */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3d2932; /* Púrpura oscuro */
+    color: #f8f8f8;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    background-color: #4a2f3d; /* Un tono más claro */
+    outline: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff66ab; /* Rosa plano */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9; /* Pequeño efecto visual, sin cambiar color */
+}

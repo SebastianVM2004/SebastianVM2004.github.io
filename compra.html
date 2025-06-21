@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario de Compra</title>
+    <link rel="stylesheet" href="compra.css" />
+</head>
+<body>
+    <main>
+        <h1>Formulario de Compra</h1>
+        <form id="formCompra" action="#" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="55 1234 5678" required pattern="[0-9\s\-]+" />
+
+            <label for="direccion">Dirección de envío:</label>
+            <textarea id="direccion" name="direccion" rows="3" placeholder="Calle, número, colonia, ciudad" required></textarea>
+
+            <label for="pago">Método de pago:</label>
+            <select id="pago" name="pago" required>
+                <option value="" disabled selected>Selecciona un método</option>
+                <option value="tarjeta">Tarjeta de crédito/débito</option>
+                <option value="paypal">PayPal</option>
+                <option value="efectivo">Efectivo contra entrega</option>
+            </select>
+
+            <button type="submit">Comprar</button>
+        </form>
+    </main>
+</body>
+</html>
