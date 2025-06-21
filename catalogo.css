@@ -1,48 +1,111 @@
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #fefbff; /* Fondo muy claro, casi blanco */
-    background-image: url('imagenes/fondosection.jpg'); /* solo si usas una imagen de fondo */
+    background-color: #fefbff;
+    background-image: url('imagenes/fondosection.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     color: #2c2c2c;
 }
 
-h1 {
+
+header {
+    background-color: rgba(44, 44, 44, 0.9);
+    color: white;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #7e6bcf;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a192e6;
+}
+
+
+h2 {
     text-align: center;
     color: #2e2e2e;
-    margin-bottom: 30px;
+    margin: 30px 0 20px;
 }
+
+h3 {
+    color: #3c3c3c;
+}
+
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px 40px;
 }
 
 .producto {
-    background-color: rgba(255, 255, 255, 0.8); /* Blanco con un poco de transparencia */
-    border: 1px solid #e0d8f5; /* Lila muy claro */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #e0d8f5;
     border-radius: 12px;
-    margin: 15px;
     padding: 20px;
-    width: 500px;
+    width: 400px;
+    max-width: 90%;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    backdrop-filter: blur(2px); /* para más armonía con fondo detallado */
+    backdrop-filter: blur(2px);
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-4px);
 }
 
 .producto img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(216, 202, 255, 0.6); /* sombra lila suave */
+    box-shadow: 0 4px 12px rgba(216, 202, 255, 0.6);
     transition: transform 0.3s ease;
 }
 
 .producto img:hover {
     transform: scale(1.02);
 }
+
+/* === PIE DE PÁGINA === */
+footer {
+    background-color: rgba(44, 44, 44, 0.9);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 40px;
+}
+
+

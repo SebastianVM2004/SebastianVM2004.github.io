@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fefbff;
@@ -6,21 +7,61 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     color: #2c2c2c;
 }
 
-h1 {
+
+header {
+    background-color: rgba(44, 44, 44, 0.9);
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #7e6bcf;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a192e6;
+}
+
+
+h2 {
     text-align: center;
     color: #2e2e2e;
-    margin-bottom: 30px;
+    margin: 40px 0 20px;
 }
+
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
+    padding: 0 60px 60px;
 }
 
 .producto {
@@ -32,6 +73,11 @@ h1 {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     backdrop-filter: blur(2px);
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-4px);
 }
 
 .producto img {
@@ -47,14 +93,24 @@ h1 {
     transform: scale(1.02);
 }
 
-.producto h2 {
+.producto h3 {
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #2e2e2e;
 }
 
 .producto p {
     margin: 10px 0;
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #333;
+}
+
+
+footer {
+    background-color: rgba(44, 44, 44, 0.9);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 40px;
+    font-size: 1rem;
 }
