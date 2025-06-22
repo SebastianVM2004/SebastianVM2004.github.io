@@ -1,13 +1,91 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url(imagenes/fondosection.jpg);
+    background-size: cover;
+    background-position: center;
     text-align: center;
     padding: 50px;
-    color: #2c2c2c;
+    color: #2c2c2c; 
     margin: 0;
 }
 
-/* Responsive para celulares */
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    color: #111111; 
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(255, 102, 171, 0.7); 
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(255, 102, 171, 0.9);
+}
+
+
+footer {
+    background-color: #4141672f; 
+    color: #2c2c2c; 
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.footer-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(255, 102, 171, 0.7);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 @media (max-width: 768px) {
     body {
         padding: 20px;
@@ -18,15 +96,17 @@ body {
         width: 95%;
     }
 
-    .social-icon {
-        margin: 10px;
-        display: block;
-    }
-
     .social-icons {
-        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
+    }
+
+    .social-icon {
+        margin: 10px 0;
+    }
+
+    .footer-img {
+        max-width: 90%;
     }
 }
