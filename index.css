@@ -89,7 +89,7 @@ section {
     color: #2c2c2c;
 }
 
-/* Responsive fix para pantallas pequeñas */
+
 @media (max-width: 768px) {
     section {
         flex-direction: column;

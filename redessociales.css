@@ -54,3 +54,13 @@ footer {
     margin-top: 40px;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
 }
+.footer-img{
+     width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(255, 102, 171, 0.7);
+}
